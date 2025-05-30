@@ -1,132 +1,133 @@
-html, body {
-    background-color: var(--background);
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html,
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .about {
-    height: calc(100dvh - var(--s) - 2 * var(--xxs));
-    width: 100vw;
-    box-shadow: inset 0 0 var(--xs) var(--border);
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow-y: auto;
-    background-color: var(--background);
-    color: var(--text);
+  height: calc(100dvh - var(--s) - 2 * var(--xxs));
+  width: 100vw;
+  box-shadow: inset 0 0 var(--xs) var(--border);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background-color: var(--background);
+  color: var(--text);
 }
 
 .profile-image {
-    width: var(--xxl);
-    height: var(--xxl);
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    padding: var(--xxs);
-    margin: var(--xxs);
+  width: var(--xxl);
+  height: var(--xxl);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  padding: var(--xxs);
+  margin: var(--xxs);
 }
-.about-title{
-    padding: var(--xxs);
-    font-size: var(--s);
-    text-align: center;
-    margin: 0;
+.about-title {
+  padding: var(--xxs);
+  font-size: var(--s);
+  text-align: center;
+  margin: 0;
 }
 .about-text {
-    display: flex;
-    flex-direction: column;
-    gap: var(--s);
-    padding: var(--xxs);
-    font-size: var(--xs);
-    text-align: center;
-    width: 45%;
-    min-width: 200px;
-    max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s);
+  padding: var(--xxs);
+  font-size: var(--xs);
+  text-align: center;
+  width: 45%;
+  min-width: 200px;
+  max-width: 90%;
 }
 .link {
-    color: var(--link);
-    text-decoration: none;
+  color: var(--link);
+  text-decoration: none;
 }
 
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .link:visited {
-    color: var(--link);
+  color: var(--link);
 }
 
-.logos{
-    display: flex;
-    flex-direction: row;
-    gap: var(--s);
-    justify-content: center;
-    align-items: center;
-    padding: var(--xxs);
-    margin: var(--xxs);
+.logos {
+  display: flex;
+  flex-direction: row;
+  gap: var(--s);
+  justify-content: center;
+  align-items: center;
+  padding: var(--xxs);
+  margin: var(--xxs);
 }
 
-.linkedin{
-    width: var(--sm);
-    height: var(--sm);
-    fill: var(--text);
-    cursor: pointer;
+.linkedin {
+  width: var(--sm);
+  height: var(--sm);
+  fill: var(--text);
+  cursor: pointer;
 }
-.linkedin:hover{
-    fill: var(--link);
-    cursor: pointer;
+.linkedin:hover {
+  fill: var(--link);
+  cursor: pointer;
 }
-.linkedin:visited{
-    fill: var(--text);
-    cursor: pointer;
+.linkedin:visited {
+  fill: var(--text);
+  cursor: pointer;
 }
-.github{
-    width: var(--sm);
-    height: var(--sm);
-    fill: var(--text);
-    cursor: pointer;
+.github {
+  width: var(--sm);
+  height: var(--sm);
+  fill: var(--text);
+  cursor: pointer;
 }
-.github:hover{
-    fill: var(--link);
-    cursor: pointer;
+.github:hover {
+  fill: var(--link);
+  cursor: pointer;
 }
-.github:visited{
-    fill: var(--text);
-    cursor: pointer;
+.github:visited {
+  fill: var(--text);
+  cursor: pointer;
 }
-.email{
-    width: var(--sm);
-    height: var(--sm);
-    fill: var(--text);
-    cursor: pointer;
+.email {
+  width: var(--sm);
+  height: var(--sm);
+  fill: var(--text);
+  cursor: pointer;
 }
-.email:hover{
-    fill: var(--link);
-    cursor: pointer;
+.email:hover {
+  fill: var(--link);
+  cursor: pointer;
 }
-.email:visited{
-    fill: var(--text);
-    cursor: pointer;
+.email:visited {
+  fill: var(--text);
+  cursor: pointer;
 }
-.resume-icon{
-    width: var(--sm);
-    height: var(--sm);
-    fill: var(--text);
-    cursor: pointer;
+.resume-icon {
+  width: var(--sm);
+  height: var(--sm);
+  fill: var(--text);
+  cursor: pointer;
 }
-.resume-icon:hover{
-    fill: var(--link);
-    cursor: pointer;
+.resume-icon:hover {
+  fill: var(--link);
+  cursor: pointer;
 }
-.resume-icon:visited{
-    fill: var(--text);
-    cursor: pointer;
+.resume-icon:visited {
+  fill: var(--text);
+  cursor: pointer;
 }
-.copyright{
-    padding: var(--xxs);
-    text-align: center;
-    font-size: var(--xs);
+.copyright {
+  padding: var(--xxs);
+  text-align: center;
+  font-size: var(--xs);
 }
