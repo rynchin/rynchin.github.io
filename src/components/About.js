@@ -22,7 +22,8 @@ const About = () => {
           <div>
             I'm an undergrad at MIT studying computer science and finance, and I
             love all things related to natural language processing, applied AI,
-            and fintech. Currently building{" "}
+            and fintech.
+            {/* Currently building{" "}
             <a
               className="link"
               href="https://www.notetexer.com"
@@ -31,7 +32,7 @@ const About = () => {
             >
               Notetexer
             </a>
-            .
+            . */}
           </div>
           <div>
             On campus, I'm a student researcher in the{" "}
