@@ -20,22 +20,29 @@ const About = () => {
         <img src={profilePic} alt="Profile" className="profile-image" />
         <div className="about-text">
           <div>
-            I'm an undergrad at MIT studying computer science and finance, and I
-            love all things related to natural language processing, applied AI,
-            and fintech.
-            {/* Currently building{" "}
+            I'm an undegrad studying computer science and finance at MIT, with a
+            focus on natural language processing and fintech.
+          </div>
+          <div>
+            Currently, I am a research intern at{" "}
             <a
               className="link"
-              href="https://www.notetexer.com"
+              href="https://www.salesforceairesearch.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Notetexer
+              Salesforce AI Research
             </a>
-            . */}
-          </div>
-          <div>
-            On campus, I'm a student researcher in the{" "}
+            , under the guidance of{" "}
+            <a
+              className="link"
+              href="https://raihanjoty.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Prof. Shafiq Joty
+            </a>
+            . I also conduct research with the{" "}
             <a
               className="link"
               href="https://www.rbg.mit.edu/"
@@ -44,39 +51,7 @@ const About = () => {
             >
               Regina Barzilay Group
             </a>{" "}
-            working on NLP and multimodal models to extract and structure
-            chemical molecule data from scientific text. I am also involved with{" "}
-            <a
-              className="link"
-              href="https://hackmit.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              HackMIT
-            </a>
-            ,{" "}
-            <a
-              className="link"
-              href="https://mitathletics.com/sports/mens-fencing/roster"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              MIT Fencing
-            </a>
-            , and{" "}
-            <a
-              className="link"
-              href="https://txi.mit.edu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Theta Xi
-            </a>
-            .
-          </div>
-          <div>
-            In my free time, I enjoy playing the piano, cooking food, and
-            playing word games.
+            on campus.
           </div>
           <div>
             Please contact me at rychin [at] mit [dot] edu if you would like to
