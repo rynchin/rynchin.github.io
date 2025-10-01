@@ -2,7 +2,6 @@ import React from "react";
 import Header from "./Header";
 import "../colors.css";
 import "./Resume.css";
-import resume from "../assets/ChinRyan-resume.pdf";
 
 const Resume = () => {
   return (

@@ -3,15 +3,10 @@ import "./About.css";
 import "../colors.css";
 import Header from "./Header";
 import profilePic from "../assets/pfp.jpg";
-import { useNavigate } from "react-router-dom";
 import SpotifyNowPlaying from "./SpotifyNowPlaying";
 
 const About = () => {
-  const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
-  const onResumeClick = () => {
-    navigate("/resume");
-  };
 
   return (
     <>

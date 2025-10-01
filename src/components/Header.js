@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import "../colors.css";
 import { useNavigate } from "react-router-dom";
@@ -11,10 +11,6 @@ const Header = () => {
   const handleHomeClick = () => {
     navigate("/");
     setCurrentPage(null);
-  };
-  const handleCourseworkClick = () => {
-    navigate("/coursework");
-    setCurrentPage("coursework");
   };
   const handleProjectsClick = () => {
     navigate("/projects");
