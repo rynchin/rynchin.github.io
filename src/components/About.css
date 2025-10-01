@@ -245,13 +245,15 @@ body {
   }
 
   .social-links {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: var(--xxs);
+    justify-content: center;
+    gap: var(--s);
+    flex-wrap: wrap;
   }
 
   .footer {
-    margin-top: auto;
+    margin-top: var(--s);
     flex-direction: column;
     gap: var(--xs);
     align-items: center;

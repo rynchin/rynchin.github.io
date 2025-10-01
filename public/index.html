@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9EY6S7SQR"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H9EY6S7SQR"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-H9EY6S7SQR');
+      gtag("config", "G-H9EY6S7SQR");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/src/assets/favicon.png" type="image/x-icon" />
-    <link rel="icon" href="/src/assets/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <title>Ryan Chin</title>
     <script>
-        (() => {
-          const redirect = sessionStorage.redirect;
-          delete sessionStorage.redirect;
-          if (redirect && redirect !== location.pathname + location.search + location.hash) {
-            history.replaceState(null, null, redirect);
-          }
-        })();
+      (() => {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (
+          redirect &&
+          redirect !== location.pathname + location.search + location.hash
+        ) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
     </script>
   </head>
   <body>

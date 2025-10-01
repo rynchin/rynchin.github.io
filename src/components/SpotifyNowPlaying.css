@@ -1,6 +1,8 @@
 .spotify-container {
   position: relative;
   display: inline-block;
+  min-width: var(--xs);
+  min-height: var(--xs);
 }
 
 .spotify-link {
@@ -12,6 +14,19 @@
 }
 
 .spotify-link:hover {
+  color: var(--link);
+}
+
+.music-icon {
+  width: var(--xs);
+  height: var(--xs);
+  color: var(--text);
+  transition: color var(--transition-speed) ease-in-out;
+  flex-shrink: 0;
+  display: block;
+}
+
+.spotify-link:hover .music-icon {
   color: var(--link);
 }
 
@@ -38,6 +53,17 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeInMobile {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -145,6 +171,37 @@
   color: var(--text);
   opacity: 0.6;
   font-style: italic;
+}
+
+/* Mobile touch device adjustments */
+@media (max-width: 768px) {
+  .spotify-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    margin-top: 0;
+    max-width: 90vw;
+    z-index: 1001;
+    animation: fadeInMobile 0.2s ease-in-out;
+  }
+
+  .listen-on-spotify {
+    display: block;
+    text-align: center;
+    margin-top: var(--xs);
+  }
+
+  .not-playing .listen-on-spotify {
+    margin-top: var(--xs);
+  }
+
+  /* Add visual feedback for touch */
+  .spotify-link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Dark mode adjustments */
