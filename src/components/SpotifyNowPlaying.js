@@ -246,15 +246,25 @@ const SpotifyNowPlaying = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <a
-        href={isTouch && isVisible ? "#" : spotifyUrl}
-        target={isTouch && isVisible ? "_self" : "_blank"}
-        rel="noopener noreferrer"
-        className="social-link spotify-link"
-        onClick={handleClick}
-      >
-        <MusicIcon />
-      </a>
+      {isTouch ? (
+        <button
+          className="social-link spotify-link"
+          onClick={handleClick}
+          type="button"
+        >
+          <MusicIcon />
+        </button>
+      ) : (
+        <a
+          href={spotifyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link spotify-link"
+          onClick={handleClick}
+        >
+          <MusicIcon />
+        </a>
+      )}
 
       {isVisible && nowPlaying && (
         <div className="spotify-popup">
