@@ -6,6 +6,7 @@ import demoVideo from "../assets/demo.mp4";
 import mqaImage from "../assets/mqa.png";
 import chainReactionImage from "../assets/Chain-Reaction.png";
 import diGif from "../assets/DI.gif";
+import dedupImage from "../assets/dedup.png";
 
 const Projects = () => {
   const projects = [
@@ -54,6 +55,19 @@ const Projects = () => {
       link: {
         url: "https://github.com/rynchin/mqa",
         text: "View on GitHub",
+      },
+    },
+    {
+      id: "dedup",
+      title: "Deduplication At Scale",
+      type: "image",
+      media: dedupImage,
+      alt: "Dedup pipeline visualization",
+      description:
+        "High-recall, CPU-feasible deduplication system for large text+code datasets. Implements MinHash–LSH and SimHash–Jaccard hybrid matching with >98% accuracy at 80–100× speedups over exact comparison. Designed for pretraining data quality and continual dataset refresh.",
+      link: {
+        url: "https://github.com/rynchin/dedup/blob/master/docs/experiments.md",
+        text: "Writeup",
       },
     },
     {

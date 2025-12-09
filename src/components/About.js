@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import "../colors.css";
 import Header from "./Header";
 import profilePic from "../assets/pfp.jpg";
 import SpotifyNowPlaying from "./SpotifyNowPlaying";
+import { useCurrentPage } from "../context/CurrentPageContext";
 
 const About = () => {
   const currentYear = new Date().getFullYear();
+  const { setCurrentPage } = useCurrentPage();
+
+  useEffect(() => {
+    setCurrentPage(null);
+  }, [setCurrentPage]);
 
   return (
     <>
@@ -34,7 +40,15 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-                / GitHub
+                / Github
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=5OsDwuwAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                / Google Scholar
               </a>
               <a
                 href="mailto:rychin@mit.edu"
