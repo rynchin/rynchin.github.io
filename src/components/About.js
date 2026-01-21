@@ -69,9 +69,7 @@ const About = () => {
           <div className="about-section">
             <h2>About</h2>
             <p className="about-description">
-              I am an undergraduate at MIT studying computer science. My
-              research interests are in NLP, representative learning, and
-              meta-learning. In my free time, I organize for{" "}
+              I am an undergraduate at MIT studying computer science. My research interests include efficient learning systems, multi-agent methods, and human–AI interaction, with emphasis on large-scale models and interactive settings. In my free time, I organize for{" "}
               <a
                 className="link"
                 href="https://hackmit.org/"
